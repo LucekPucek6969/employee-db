@@ -37,6 +37,7 @@ public class InMemoryEmployeeDB implements EmployeeDb {
     }
 
     public Optional<Employee> findById(long employeeId) {
-        return employeeList.stream().filter(employee -> employee.getId() == employeeId).findAny();
+        return employeeList.stream()
+                .filter(employee -> employee.getId() == employeeId).findAny();
     }
 }

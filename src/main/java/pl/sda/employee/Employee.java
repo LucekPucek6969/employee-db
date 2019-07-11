@@ -13,6 +13,7 @@ public class Employee {
     //dla kazdej z lini tworzonego pliku tekstowego
 
     public String asLine() {
+
         return id + "," + name + "," + extractTaskId();
     }
 
